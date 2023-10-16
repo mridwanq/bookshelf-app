@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  margin: 20px 0;
+  background-color: #272727;
+}
+
+.boxed {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  color: white;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header > div {
+  background: -webkit-linear-gradient(#3bf686, #4ca9ff);
+  padding: 10px 30px;
+  border-radius: 16px;
+}
+
+.brand {
+  font-weight: bold;
+  color: black;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.btn {
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background: -webkit-linear-gradient(#3bf686, #4ca9ff);
+  font-weight: bold;
+}
+
+.btn img {
+  width: 24px;
+}
+
+.btn:hover {
+  background: #3bf686;
+}
+
+.input-text {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+#book-list {
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-edit {
+  background-color: transparent;
+  border: 1px solid #a8df8e;
+  color: black;
+  background-color: #a8df8e;
+}
+
+.btn-edit:hover {
+  background: #3bf686;
+  color: black;
+}
+
+.btn-move {
+  float: right;
+}
+
+#form-wrapper {
+  margin-top: 10px;
+}
+
+#form-book {
+  background: #ededed9e;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#form-book h4 {
+  font-weight: bold;
+  font-size: 15.5px;
+}
+
+#form-book input {
+  width: 97%;
+}
+
+#form-book .form-group label {
+  font-size: 14px;
+}
+
+#form-book input.custom {
+  width: 30px;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #book-list.flex-container {
+    flex-direction: column;
+  }
+
+  .boxed {
+    width: 90%;
+  }
+}
